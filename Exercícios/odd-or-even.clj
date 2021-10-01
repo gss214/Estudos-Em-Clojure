@@ -1,4 +1,4 @@
-(require '[clojure.test :only [is]])
+(use '[clojure.test :only [is]])
 
 (defn odd-or-even [xs]
     (if (or (nil? xs) (even? (apply + xs)))

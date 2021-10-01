@@ -1,4 +1,4 @@
-(require '[clojure.test :only [is]])
+(use '[clojure.test :only [is]])
 
 (defn repeat-str [n strng]
 

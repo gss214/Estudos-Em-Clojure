@@ -1,5 +1,5 @@
 (require '[clojure.string :as str])
-(require '[clojure.test :only [is]])
+(use '[clojure.test :only [is]])
 
 (defn high-and-low [s]
 
