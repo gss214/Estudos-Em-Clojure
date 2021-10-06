@@ -2,8 +2,7 @@
 (use '[clojure.test :only [is]])
 
 (defn solve [s]
-  (let [x (map #(apply str (concat % (subs % 0 1))) (str/split s #" "))]
-    (str/join " " (map #(apply str (concat (subs % 1 (count %)) "ay")) x))))
+  (str/join " " (map #(apply str (concat (reverse %) "ay")) (str/split s #" "))))
 
 (defn testPig []
   (is (= (solve "Pig latin is cool") "igPay atinlay siay oolcay"))
