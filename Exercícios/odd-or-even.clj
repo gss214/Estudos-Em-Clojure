@@ -1,12 +1,11 @@
 (use '[clojure.test :only [is]])
 
 (defn odd-or-even [xs]
-    (if (or (nil? xs) (even? (apply + xs)))
-        (str "even")
-        (str "odd")))
+  (if (or (nil? xs) (even? (apply + xs)))
+    (str "even")
+    (str "odd")))
 
-
-(defn test-odd-or-even []
+(defn tests []
   (is (= (odd-or-even [1]) "odd"))
   (is (= (odd-or-even [-1]) "odd"))
   (is (= (odd-or-even [1, -2]) "odd"))

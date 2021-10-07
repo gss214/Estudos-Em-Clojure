@@ -8,11 +8,11 @@
     0
     (reduce + (filter multiple (range 1 x)))))
 
-(defn test-multiples-of-3-and-5 []
+(defn tests []
   (is (= (multiples-of-3-and-5 10) 23))
   (is (= (multiples-of-3-and-5 0) 0))
   (is (= (multiples-of-3-and-5 3) 3))
   (is (= (multiples-of-3-and-5 -9) 0))
   (is (= (multiples-of-3-and-5 20) 78)))
-  
-  
+
+

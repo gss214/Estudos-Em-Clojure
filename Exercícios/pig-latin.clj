@@ -5,6 +5,6 @@
   (let [x (map #(apply str (concat % (subs % 0 1))) (str/split s #" "))]
     (str/join " " (map #(apply str (concat (subs % 1 (count %)) "ay")) x))))
 
-(defn testPig []
+(defn tests []
   (is (= (solve "Pig latin is cool") "igPay atinlay siay oolcay"))
   (is (= (solve "This is my string") "hisTay siay ymay tringsay")))
