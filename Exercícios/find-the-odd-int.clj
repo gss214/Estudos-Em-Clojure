@@ -1,7 +1,7 @@
 (use '[clojure.test :only [is]])
 
 (defn find-odd-int [xs]
-  (map first (filter (fn [[_ v]] (odd? v)) (frequencies xs))))
+  (reduce + (map first (filter (fn [[_ v]] (odd? v)) (frequencies xs)))))
 
 (defn tests []
 
